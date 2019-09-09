@@ -1,0 +1,15 @@
+include:
+  - project: 'dx-platform/gitlab-pipeline-templates'
+    ref: master
+    file: '/docker-build.gitlab-ci.yml'
+  - project: 'dx-platform/gitlab-pipeline-templates'
+    ref: master
+    file: '/scan-image.gitlab-ci.yml'
+  - project: 'dx-platform/gitlab-pipeline-templates'
+    ref: master
+    file: '/push-image.gitlab-ci.yml'
+
+stages:
+  - build
+  - scan-image
+  - push-image
