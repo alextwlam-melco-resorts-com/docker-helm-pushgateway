@@ -9,6 +9,8 @@ include:
     ref: master
     file: '/push-image.gitlab-ci.yml'
 
+## test removing cache 
+
 stages:
   - build
   - scan-image
